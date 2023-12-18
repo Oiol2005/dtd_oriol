@@ -1,0 +1,54 @@
+
+<!--Exercici 6-->
+<llibreria>
+    <existencies>
+        <llibre id="1">
+            <titul> nada </titul>
+            <autor>Carme Laforet i Díaz</autor>
+            <any_publicacio>1945</any_publicacio>
+            <editorial>destino</editorial>
+            <preu>9.45</preu>
+            <quantitat>60</quantitat>
+        </llibre>
+        <llibre id="2">
+            <titul> Muerte en Venecia  </titul>
+            <autor>Thomas Mann</autor>
+            <any_publicacio>1912</any_publicacio>
+            <editorial>debols!illo</editorial>
+            <preu>11</preu>
+            <quantitat>34</quantitat>
+        </llibre>
+        <llibre id="3">
+            <titul>Crónicas marcianas</titul>
+            <autor> Ray Bradbury</autor>
+            <any_publicacio>1950</any_publicacio>
+            <editorial>booket</editorial>
+            <preu>8</preu>
+            <quantitat>21</quantitat>
+        </llibre>
+        <llibre id="4">
+            <titul>Bajo la red </titul>
+            <autor>Iris Murdoch</autor>
+            <any_publicacio>1954</any_publicacio>
+            <editorial>impedimenta</editorial>
+            <preu>23</preu>
+            <quantitat>45</quantitat>
+        </llibre>
+    </existencies>
+    <clients>
+        <client>
+            <nom> Feng </nom>
+            <cognom> Garcia</cognom>
+            <compra>
+                <tiquet_compra>
+                    <llibres_comprats>
+                        <llibre ref="1" />
+                        <llibre ref="2" />
+                        <llibre ref="3">  <!--Faltaba cerrar el element "Llibre" con ">"-->
+                    </llibres_comprats>
+                    <data>"20-01-2022 20:00:04"</data>
+                </tiquet_compra>
+            </compra>
+        </client>
+    </clients>
+</llibreria>

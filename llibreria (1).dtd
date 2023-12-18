@@ -1,0 +1,17 @@
+<!ELEMENT llibreria (existencies, clients)>
+
+<!ELEMENT existencies (llibre+)>
+<!ELEMENT llibre (titul, autor, any_publicacio, editorial, preu, quantitat)>
+<!ATTLIST llibre id ID #REQUIRED>
+
+<!ELEMENT clients (client+)>
+<!ELEMENT client (nom, cognom, compra)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+
+<!ELEMENT compra (tiquet_compra)>
+<!ELEMENT tiquet_compra (llibres_comprats, data)>
+<!ELEMENT llibres_comprats (llibre+)>
+<!ELEMENT data (#PCDATA)>
+
+<!ATTLIST llibre ref IDREF #REQUIRED>
